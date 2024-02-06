@@ -1,0 +1,15 @@
+import csv
+import random
+
+with open('password.csv', encoding = 'utf-8') as file:
+    reader = csv.reader(file, delimiter = ',')
+
+
+for i in range(len(answer)):
+    fio = answer[i][1].split()
+    newfio = fio[0] +'_'+ fio[1][0] + fio[2][0]
+    answer[i].append(new_fio)
+    sp = '1234567890QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm'
+    ran = ''.join(random.sample(sp, 8))
+    print(ran)
+    print(answer[i])
